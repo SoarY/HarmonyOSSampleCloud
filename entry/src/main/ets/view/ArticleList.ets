@@ -4,7 +4,6 @@ import { RefreshController } from '@app/refresh'
 import { HomeViewModel } from '../viewmodel/HomeViewModel'
 import { ArticleDataBean } from '../bean/ArticleDataBean'
 import promptAction from '@ohos.promptAction'
-import hilog from '@ohos.hilog'
 
 @Component
 export default struct ArticleList{
@@ -32,7 +31,7 @@ export default struct ArticleList{
         this.getHomeArticleList(false)
         this.controller.finishLoadMore()
       }
-    })
+    }).visibility(this.articleData.length>0?Visibility.Visible:Visibility.Hidden)
   }
 
   @Builder
