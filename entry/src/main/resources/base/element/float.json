@@ -1,0 +1,17 @@
+{
+  "float": [
+    {
+      "name": "mainPage_barHeight",
+      "value": "56vp"
+    },  {
+      "name": "mainPage_tabHeight",
+      "value": "40vp"
+    },  {
+      "name": "tab_line_height",
+      "value": "4vp"
+    },  {
+      "name": "android_play_head_height",
+      "value": "150vp"
+    }
+  ]
+}

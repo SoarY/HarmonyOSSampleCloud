@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "000000185B36ED0420CF15BFEC421AED24C7E93E6591BF5D50EB62A60642B3313ECCB27E9D2A4718",
+          "certpath": "F:/vest/jks/huawei/debugfile/hwappdebug.cer",
+          "keyAlias": "huaweisoar",
+          "keyPassword": "000000189262BEB7B7C0BD804FAAA5583891330AA1BBCEA56242263DBDD7C226E11CA9722BC87206",
+          "profile": "F:/vest/jks/huawei/debugfile/hwhapDebug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "F:/vest/jks/huawei/huaweisoar.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
